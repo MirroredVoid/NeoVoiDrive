@@ -67,3 +67,31 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# ---------------------------------------------------------------------------
+# NeoVoiDrive project-specific
+# ---------------------------------------------------------------------------
+
+# Optional local JUCE checkout (CMake falls back to FetchContent tag 9.0.0)
+stuff/
+
+# Local agent/session/temp data
+.reasonix/
+.reasonix_tmp/
+.tmp_smoke/
+
+# Packaging and IDE output
+out/
+package/
+dist/
+NeoVoiDrive-*-win64/
+CMakeUserPresets.json
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+
+# Tracked fixtures that the generic rules above must not swallow
+!tests/assets/voice.wav
+!assets/fonts/*.ttf
